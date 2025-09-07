@@ -28,8 +28,8 @@ jobs:
 
       - name: Print secrets (for debug, remove in production)
         run: |
-          echo "Secret 1: $MY_SECRET_1"
-          echo "Secret 2: $MY_SECRET_2"
+          echo "Secret 1: ${MY_SECRET_1}"
+          echo "Secret 2: ${MY_SECRET_2}"
 
       - name: Install dependencies
         run: mvn install -B
